@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukoon Cafe</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+
+        <div class="logo">Sukoon Cafe</div>
+
+        <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About us</a></li>
+            <li> <a href="#offer">What We Offer</a></li>
+            <li> <a href="#menu">Our Menu</a></li>
+            <li> <a href="#gallery">Gallery</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="sub-heading"> Thinking of a quick break?</p>
+            <h1>Everywhere, the best coffee around</h1>
+            <a href="#" class="btn">Click Here</a>
+        </div>
+    </section>
+    <section class="about animate-on-scroll" id="about">
+        <div class="about-image">
+            <img src="{% static 'image/about.jpg' %}" alt="Sukoon Cafe interior">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Sukoon Cafe, where we serve the finest coffee and delectable treats in a cozy and inviting
+                atmosphere. Our passion for quality and customer satisfaction drives us to create an unforgettable
+                experience for every visitor.</p>
+            <a href="#" class="about-btn">Learn More</a>
+        </div>
+    </section>
+    <section class="offer animate-on-scroll" id="offer">
+        <div class="offer-content">
+            <h2>A Taste of Sukoon</h2>
+            <p>Thoughtfully crafted coffee, delicious bites, and peaceful moments — all served with a little Sukoon.</p>
+            <div class="offer-items">
+                <div class="offer-item">
+                    <h3>Handcrafted Coffee</h3>
+                    <p>Rich, aromatic and freshly brewed to make every sip worth slowing down for. </p>
+                </div>
+                <div class="offer-item">
+                    <h3>Freshly Baked</h3>
+                    <p>Warm, delicious and freshly baked treats to perfectly complement your coffee.</p>
+                </div>
+                <div class="offer-item">
+                    <h3>Sweet Indulgence</h3>
+                    <p>Delightful desserts crafted to add a little sweetness to your Sukoon moments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu animate-on-scroll" id="menu">
+        <div class="menu-content">
+            <h2>Our Menu</h2>
+            <p>A little something for every craving — sip, snack, or indulge.</p>
+
+            <div class="menu-category">
+                <h3>☕ Hot Beverages</h3>
+                <div class="menu-list">
+                    <div class="menu-list-item">
+                        <span class="item-name">☕ Cappuccino</span>
+                        <span class="item-price">₹150</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <span class="item-name">☕ Espresso</span>
+                        <span class="item-price">₹120</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <span class="item-name">☕ Cafe Latte</span>
+                        <span class="item-price">₹160</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <span class="item-name">🍫 Hot Chocolate</span>
+                        <span class="item-price">₹170</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category menu-category-dark">
+                <h3>🧊 Cold Beverages</h3>
+                <div class="menu-list">
+                    <div class="menu-list-item">
+                        <span class="item-name">🥤 Cold Brew</span>
+                        <span class="item-price">₹180</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <span class="item-name">🥤 Iced Latte</span>
+                        <span class="item-price">₹190</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <span class="item-name">🥤 Frappe</span>
+                        <span class="item-price">₹200</span>
+                    </div>
+                    <div class="menu-list-item">
+                        <span class="item-name">🍋 Lemon Iced Tea</span>
+                        <span class="item-price">₹150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery animate-on-scroll" id="gallery">
+        <div class="gallery-content">
+            <h2>Our Gallery</h2>
+            <p>A glimpse into the Sukoon experience - one cup, one moment at a time.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery1.jpg' %}" alt="Freshly roasted coffee beans in a bowl">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery2.jpg' %}" alt="Iced coffee with ice cubes">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery3.jpg' %}" alt="Latte art in a white cup">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery4.jpg' %}" alt="French fries with cold coffee">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery5.jpg' %}" alt="Hot Tea with role">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery6.jpg' %}" alt="Chinise dish">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery7.jpg' %}" alt="Beans">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery8.jpg' %}" alt="Table Cards">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery9.jpg' %}" alt="Order device">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery10.jpg' %}" alt="Outdoor seating with plants">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery11.jpg' %}" alt="Tea with snacks">
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'image/gallery12.jpg' %}" alt="Cheese Bread">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact animate-on-scroll" id="contact">
+        <div class="contact-content">
+            <h2>Get In Touch</h2>
+            <p class="contact-tagline">Have a question or just want to say hi? We'd love to hear from you.</p>
+
+            {% if messages %}
+            {% for message in messages %}
+            <div class="form-message">{{ message }}</div>
+            {% endfor %}
+            <script>
+                window.addEventListener("load", function () {
+                    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+                });
+            </script>
+            {% endif %}
+
+            <div class="contact-grid">
+                <div class="contact-form-side">
+                    <form class="contact-form" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <input type="text" name="firstName" placeholder="First Name" required>
+                            <input type="text" name="lastName" placeholder="Last Name" required>
+                        </div>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-side">
+                    <div class="info-item">
+                        <h4>📍 Address</h4>
+                        <p>123, MG Road, Bareilly, Uttar Pradesh</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📞 Phone</h4>
+                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>💌 Email</h4>
+                        <p><a href="mailto:hello@sukooncafe.com">hello@sukooncafe.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🕒 Business Hours</h4>
+                        <p>Mon - Sun: 9:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="https://www.facebook.com/profile.php?id=100087370620592" target="_blank"
+                            aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=Bareilly%2C%20Uttar%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
